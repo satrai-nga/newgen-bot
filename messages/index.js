@@ -72,7 +72,7 @@ var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure
     openIdMetadata: process.env['BotOpenIdMetadata']
 });
 var bot = new builder.BotConnectorBot(connector);
-bot.localePath(path.join(__dirname, './locale'));
+// bot.localePath(path.join(__dirname, './locale'));
 
 var luisAppId = process.env.LuisAppId;
 var luisAPIKey = process.env.LuisAPIKey;
