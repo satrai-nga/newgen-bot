@@ -58,6 +58,7 @@
 // }
 
 var builder = require('botbuilder');
+var botbuilder_azure = require("botbuilder-azure");
 var restify = require('restify');
 var weatherClient = require('./wunderground-client');
 var path = require('path');
