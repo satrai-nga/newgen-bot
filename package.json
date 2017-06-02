@@ -1,0 +1,27 @@
+{
+  "name": "newgenbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satrai-nga/newgen-bot.git"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "botbuilder": "^3.8.3",
+    "botbuilder-azure": "3.0.2",
+    "dotenv-extended": "^1.0.4",
+    "request": "^2.79.0",
+    "restify": "^4.3.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satrai-nga/newgen-bot/issues"
+  },
+  "homepage": "https://github.com/satrai-nga/newgen-bot#readme"
+}
