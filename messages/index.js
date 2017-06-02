@@ -1,6 +1,6 @@
 // /*-----------------------------------------------------------------------------
-// This template demonstrates how to use an IntentDialog with a LuisRecognizer to add 
-// natural language support to a bot. 
+// This template demonstrates how to use an IntentDialog with a LuisRecognizer to add
+// natural language support to a bot.
 // For a complete walkthrough of creating this type of bot see the article at
 // http://docs.botframework.com/builder/node/guides/understanding-natural-language/
 // -----------------------------------------------------------------------------*/
@@ -52,7 +52,7 @@
 //     server.listen(3978, function() {
 //         console.log('test bot endpont at http://localhost:3978/api/messages');
 //     });
-//     server.post('/api/messages', connector.listen());    
+//     server.post('/api/messages', connector.listen());
 // } else {
 //     module.exports = { default: connector.listen() }
 // }
@@ -82,7 +82,7 @@ const LuisModelUrl = 'https://' + luisAPIHostName + '/luis/v1/application?id=' +
 var dialog = new builder.LuisDialog(LuisModelUrl);
 
 bot.add('/', dialog);
-
+// test
 dialog.on('builtin.intent.weather.check_weather', [
     (session, args, next) => {
         var locationEntity = builder.EntityRecognizer.findEntity(args.entities, 'builtin.weather.absolute_location');
@@ -106,7 +106,7 @@ if (useEmulator) {
     server.listen(3978, function() {
         console.log('test bot endpont at http://localhost:3978/api/messages');
     });
-    server.post('/api/messages', connector.listen());    
+    server.post('/api/messages', connector.listen());
 } else {
     module.exports = { default: connector.listen() }
 }
